@@ -8,11 +8,11 @@
 }
 
 :root {
-  --color-primary: #0d0d0d;
-  --color-secondary: #1a1a2e;
-  --color-accent: #ff4655;
-  --color-accent-hover: #e03a4a;
-  --color-gold: #f0c040;
+  --color-primary: #0b0b0b;
+  --color-secondary: #241773;
+  --color-accent: #9461fb;
+  --color-accent-hover: #7a4de0;
+  --color-gold: #9e7c0c;
   --color-light: #f5f5f5;
   --color-white: #ffffff;
   --color-text: #333333;
@@ -120,7 +120,7 @@ img {
 
 /* === Hero === */
 .hero {
-  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 50%, #16213e 100%);
+  background: linear-gradient(135deg, #0d0d0d 0%, #241773 50%, #1a0f5e 100%);
   color: var(--color-white);
   text-align: center;
   padding: 100px 24px 120px;
@@ -135,8 +135,8 @@ img {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at 30% 70%, rgba(255, 70, 85, 0.08) 0%, transparent 50%),
-              radial-gradient(circle at 70% 30%, rgba(240, 192, 64, 0.06) 0%, transparent 50%);
+  background: radial-gradient(circle at 30% 70%, rgba(148, 97, 251, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 70% 30%, rgba(158, 124, 12, 0.08) 0%, transparent 50%);
   animation: heroGlow 8s ease-in-out infinite alternate;
 }
 
@@ -207,7 +207,7 @@ img {
 .btn-primary:hover {
   background: var(--color-accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(255, 70, 85, 0.4);
+  box-shadow: 0 4px 20px rgba(148, 97, 251, 0.4);
 }
 
 .btn-secondary {
@@ -236,7 +236,7 @@ img {
 
 /* === Event Banner === */
 .event-banner {
-  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+  background: linear-gradient(135deg, #241773 0%, #2b1a8a 100%);
   padding: 80px 24px;
 }
 
@@ -490,7 +490,7 @@ img {
 }
 
 .social-link.instagram {
-  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  background: linear-gradient(135deg, #833ab4, #c13584, #e1306c);
 }
 
 .social-link.facebook {
@@ -651,6 +651,165 @@ footer {
 .footer-copy {
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.4);
+}
+
+/* === Dozer Tribute === */
+.tribute-hero {
+  background: linear-gradient(135deg, #0b0b0b 0%, #241773 50%, #1a0f5e 100%);
+  color: var(--color-white);
+  text-align: center;
+  padding: 100px 24px;
+  position: relative;
+}
+
+.tribute-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(158, 124, 12, 0.1) 0%, transparent 60%);
+}
+
+.tribute-hero .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.tribute-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.tribute-hero .subtitle {
+  font-size: 1.3rem;
+  color: var(--color-gold);
+  margin-bottom: 8px;
+}
+
+.tribute-hero .years {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tribute-content {
+  padding: 80px 24px;
+}
+
+.tribute-story {
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.tribute-story h2 {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.tribute-story p {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.tribute-highlights {
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.tribute-highlights h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 32px;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.highlight-card {
+  background: var(--color-light);
+  padding: 32px 24px;
+  border-radius: var(--radius);
+  text-align: center;
+  border-left: 4px solid var(--color-accent);
+  transition: transform var(--transition);
+}
+
+.highlight-card:hover {
+  transform: translateY(-3px);
+}
+
+.highlight-card .highlight-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.highlight-card h3 {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.highlight-card p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
+
+.tribute-quote {
+  background: linear-gradient(135deg, #0b0b0b 0%, #241773 100%);
+  padding: 60px 24px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.tribute-quote blockquote {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  font-style: italic;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tribute-quote cite {
+  display: block;
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 1rem;
+  color: var(--color-gold);
+}
+
+.tribute-legacy {
+  padding: 60px 24px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tribute-legacy h2 {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.tribute-legacy p {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.paw-divider {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 12px;
+  color: var(--color-accent);
+  padding: 20px 0;
 }
 
 /* === Animations === */
